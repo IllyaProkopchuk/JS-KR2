@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'verdana_hand';
+	src: url('../fonts/verdana_hand.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/verdana_hand.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/verdana_hand.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/verdana_hand.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/verdana_hand.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/verdana_hand.svg#verdana_hand') format('svg'); /* Chrome < 4, Legacy iOS */
+}

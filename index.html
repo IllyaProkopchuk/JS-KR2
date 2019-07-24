@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- HEAD -->
+        <div id="header">
+            <div class="buttonBlock">
+                <div class="console btn-group">
+                    <button class="consoleBtn btn btn-light" type="button">
+                        <div class="bg1"></div>
+                    </button>
+                </div>
+                <div class="textType btn-group" role="group" aria-label="Basic example">
+                    <button class="bold btn btn-light" type="button">
+                        <div class="bg2"></div>
+                    </button>
+                    <button class="italic btn btn-light" type="button">
+                        <div class="bg3"></div>
+                    </button>
+                    <button class="underlined btn btn-light" type="button">
+                        <div class="bg4"></div>
+                    </button>
+                    <button class="deleted btn btn-light" type="button">
+                        <div class="bg5"></div>
+                    </button>
+                </div>
+                <div class="textPosition btn-group">
+                    <button class="left btn btn-light" type="button">
+                        <div class="logo1"></div>
+                    </button>
+                    <button class="center btn btn-light" type="button">
+                        <div class="logo2"></div>
+                    </button>
+                    <button class="right btn btn-light" type="button">
+                        <div class="logo3"></div>
+                    </button>
+                </div>
+                <div class="boxStyle btn-group">
+                    <div class="dropdown">
+                        <button class="fontFamily btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="bgi1"></div>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="arial dropdown-item" href="#"><span>Arial</span></a>
+                            <a class="georgia dropdown-item" href="#"><span>Georgia</span></a>
+                            <a class="impact dropdown-item" href="#"><span>Impact</span></a>
+                            <a class="tahoma dropdown-item" href="#"><span>Tahoma</span></a>
+                            <a class="roman dropdown-item" href="#"><span>Times New Roman</span></a>
+                            <a class="verdana dropdown-item" href="#"><span>Verdana</span></a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <button class="fontSize btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="bgi2"></div>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a class="s1 dropdown-item" href="#">12px</a>
+                            <a class="s2 dropdown-item" href="#">14px</a>
+                            <a class="s3 dropdown-item" href="#">16px</a>
+                            <a class="s4 dropdown-item" href="#">18px</a>
+                            <a class="s5 dropdown-item" href="#">20px</a>
+                            <a class="s6 dropdown-item" href="#">22px</a>
+                            <a class="s7 dropdown-item" href="#">25px</a>
+                            <a class="s8 dropdown-item" href="#">30px</a>
+                        </div>
+                    </div>
+                    <button id="fontColorShowModal" class="bgi3 btn btn-light" type="button">
+                        <!-- <div class="bgi3"></div> -->
+                    </button>
+                    <button id="backgroundShowModal" class="bgi4 btn btn-light" type="button">
+                        <!-- <div class="bgi4"></div> -->
+                    </button>
+                </div>
+                <div class="loginBoxShowModal">
+                    <button class="login bgi5 btn btn-light" type="button">
+                        <!-- <div class="bgi5"></div> -->
+                    </button>
+                </div>
+            </div>
+            <div class="newButtonBlock">
+                <div class="lol btn-group">
+                    <button id="goHome" class="logotype1 btn btn-light" type="button">
+                        <!-- <div class="logotype1"></div> -->
+                    </button>
+                    <button id="tableBox" class="logotype2 center btn btn-light" type="button">
+                        <!-- <div class="logotype2"></div> -->
+                    </button>
+                    <button id="olCreateShow" class="logotype3 right btn btn-light" type="button">
+                        <!-- <div class="logotype3"></div> -->
+                    </button>
+                    <button id="liCreateShow" class="logotype3 right btn btn-light" type="button">
+                        <!-- <div class="logotype3"></div> -->
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- TEXT -->
+        <div class="mainBox">
+            <div id="insideBox">
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+        </div>
+        <div id="textArea">
+            <textarea id="myArea" cols="30" rows="10"></textarea>
+        </div>
+        <!-- MODALS -->
+        <div>
+            <div id="fontColorModal">
+            </div>
+        </div>
+        <div>
+            <div id="backgroundModal">
+                <ul id="bgUl" class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                            aria-controls="home" aria-selected="true">Colors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            aria-controls="profile" aria-selected="false">Images</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            aria-controls="contact" aria-selected="false">Files</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    </div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <input type="file" id="file">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="blockModal">
+            <div id="headBlock">
+                <h2>Sign In</h2>
+            </div>
+            <div id="mainBlock">
+                <form action="">
+                    <input type="text" id="login" class="form-control" placeholder="Login here..."><br>
+                    <input type="text" id="pass" class="form-control" placeholder="Password here..."><br>
+                    <input type="button" id="mybtn" value="Sign in" class="btn btn-secondary">
+                </form>
+            </div>
+        </div>
+        <div id="createTable">
+            <!-- 1 -->
+            <div id="inOneRow">
+                <div class="createTR size">
+                    <label for="countTR">Count TR:</label>
+                    <div class="boxTR">
+                        <input id="countTR" class="form-control" type="text" placeholder="Type here...">
+                    </div>
+                </div>
+                <div class="createTD size">
+                    <label for="countTD">Count TD:</label>
+                    <div class="boxTD">
+                        <input id="countTD" class="form-control" type="text" placeholder="Type here...">
+                    </div>
+                </div>
+            </div>
+            <!-- 2 -->
+            <div id="inOneRow">
+                <div class="boxWidthTR size">
+                    <label for="widthTD">Width of TD:</label>
+                    <div class="boxTR">
+                        <input id="widthTD" class="form-control" type="text" placeholder="Type here...">
+                    </div>
+                </div>
+                <div class="boxWidthTD size">
+                    <label for="heightTD">Height of TD:</label>
+                    <div class="boxTD">
+                        <input id="heightTD" class="form-control" type="text" placeholder="Type here...">
+                    </div>
+                </div>
+            </div>
+            <!-- 3 -->
+            <div id="inOneRow">
+                <div class="boxBorderWidth size">
+                    <label for="borderWidth">Width of border:</label>
+                    <div class="boxTR">
+                        <input id="borderWidth" class="form-control" type="text" placeholder="Type here...">
+                    </div>
+                </div>
+                <div class="boxBorderStyle size2">
+                    <label for="borderStyle">Style of border:</label>
+                    <div class="form-group">
+                        <form action="" name="f2">
+                            <select id="sel" name="sel" class="form-control">
+                                <option value="solid" selected>solid</option>
+                                <option value="dotted">dotted</option>
+                                <option value="dashed">dashed</option>
+                                <option value="double">double</option>
+                                <option value="ridge">ridge</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="boxColor size3">
+                    <label for="myColor">Border color:</label>
+                    <div class="boxColor">
+                        <input id="myColor" class="form-control" type="text" placeholder="Type here...">
+                    </div>
+                </div>
+            </div>
+            <!-- 4 -->
+            <div id="inOneRow">
+                <input id="reset" class=" btn btn-danger" type="button" value="Reset">
+                <input id="createTBL" class="btn btn-success" type="button" value="Create table">
+            </div>
+        </div>
+        <!-- ol -->
+        <div id="createOl">
+            <div class="boxOl sizeOl">
+                <label for="">Count li item:</label>
+                <div id="countOlBox">
+                    <input id="countOl" class="form-control" type="text" placeholder="Type here...">
+                </div>
+            </div>
+            <div class="boxBorderStyle size2">
+                <label for="borderStyle">Type mark of list:</label>
+                <div class="form-group">
+                    <form action="" name="f4" style="width: 380px; margin-left: -10px;">
+                        <select id="sel2" name="type" class="custom-select">
+                            <option value="A" selected>A</option>
+                            <option value="i">i</option>
+                            <option value="1">1</option>
+                            <option value="I">I</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div id="inOneRow" class="sizeOl">
+                <input id="resetOl" class=" btn btn-danger" type="button" value="Reset">
+                <input id="btnCreateOl" class="btn btn-success" type="button" value="Create list">
+            </div>
+        </div>
+        <!-- ul -->
+        <div id="createUl">
+            <div class="boxUl sizeOl" id="no1">
+                <label id="no1" for="">Count li item:</label>
+                <div id="countUlBox">
+                    <input id="countUl" class="form-control" type="text" placeholder="Type here...">
+                </div>
+            </div>
+            <div class="boxBorderStyle size2" id="no">
+                <label id="no1" for="borderStyle">Type mark of list:</label>
+                <div class="form-group">
+                    <form action="" name="f5" style="width: 380px; margin-left: -10px;">
+                        <select id="sel3" name="type" class="custom-select">
+                            <option value="sircle" selected>circle</option>
+                            <option value="disk">disk</option>
+                            <option value="square">square</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div id="inOneRow" class="sizeUl">
+                <input id="resetUl" class=" btn btn-danger" type="button" value="Reset">
+                <input id="btnCreateUl" class="btn btn-success" type="button" value="Create list">
+            </div>
+        </div>
+        <div id="blur"></div>
+        <div id="blur1"></div>
+        <div id="blur2"></div>
+        <div id="blur3"></div>
+        <div id="blur4"></div>
+        <div id="blur5"></div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
